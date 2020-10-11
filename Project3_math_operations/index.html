@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>math operation</title>
+        <script src="js/main.js"></script>
+        <style> 
+        button {
+            background-color: beige;
+            border-style: 2px black;
+            padding: 2px;
+            }
+        div {
+            padding: 4px;
+            margin: 4px;
+        }
+
+        p {
+            padding: 4px;
+            margin: 4px;
+        }
+        
+            
+        </style>
+    </head>
+
+    <body>
+        
+            <div>
+                <div style="background-color: beige; width: 50%;">
+                    <h1>MATH OPERATIONS</h1>
+
+                    <!--buttons that produce the product of functions-->
+                        <!--double click buttons fire off additional functions-->
+                        <p id="math"></p>
+                         
+                            <button onclick="myFunction_add()" ondblclick="myFunction_addinc()">ADD</button><br><br>
+                            Double click to increase by 1. 
+                        <p id="math1"></p>
+                          
+                            <button onclick="myFunction_sub()" ondblclick="myFunction_subdec()">SUBTRACT</button><br><br>
+                            Double click to decrease by 1. 
+                        <p id="math2"></p>
+                           
+                            <button onclick="myFunction_mult()" ondblclick="myFunction_multran()">MULTIPLY</button><br><br>
+                            Double click to multiply by random number (in pop-up window).
+                        <!--end double click buttons-->
+                        <p id="math3"></p>
+                            <button onclick="myFunction_div()">DIVIDE</button><br><br>
+                        <p id="math4"></p>
+                            <button onclick="myFunction_all()">ALL</button><br><br>
+                        <p id="math_a"></p>
+                            <button onclick="myFunction_op()">MODULUS</button><br><br>
+                        <p id="math_b"></p>
+                            <button onclick="myFunction_neg()">NEGATION</button><br><br>
+
+                    <!--end buttons-->       
+                            
+                </div>
+               
+            </div>
+       
+    </body>
+</html>
