@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+    <script src="js/main.js"></script>
+    <style>
+        body{
+            background-color: cornsilk;
+            color: black;
+        }
+        div{
+            background-color: gainsboro;
+            color: slategrey;
+            align-self: center;
+            width: 50%;
+            height: 50%;
+        }
+        h1{
+            color: black;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+    </head>
+        <body>
+            <center>
+            <div>
+                <form><h1>Crystals</h1><br>
+                    <label for ="crystalname">Name:</label>
+                    <input type="checkbox"  onclick="myDictionary_n()"><br>
+                    <label for ="crystaltype">Type:</label>
+                    <input type="checkbox" onclick="myDictionary_t()"><br>
+                    <label for ="crystalcolor">Color:</label>
+                    <input type="checkbox" onclick="myDictionary_c()"><br><br>
+                    <button id="dictionary", type="button" onclick="myDictionary()">ENTER</button><br><br>
+                    <textarea id="displayhere"></textarea><br><br>
+                </form>
+            </div>
+            </center>
+        </body>
+</html>
