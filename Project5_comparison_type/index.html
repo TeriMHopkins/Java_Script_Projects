@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Comparisons</title>
+                <style>
+                    body{
+                        background-color: cornsilk;
+                        color: black;
+                    }
+                    div{
+                        background-color: gainsboro;
+                        color: black;
+                        align-self: center;
+                        width: 50%;
+                        height: 50%;
+                    }
+                    h1{
+                        color: black;
+                        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+
+                    }
+
+                    form{
+                        padding: 10px;
+                        margin: 10px;
+                        text-align: left;
+                    }
+
+                    input{
+                        margin-left: 20%;
+                        margin-right: 80%;
+                    }
+
+                    button{
+                        padding: 6px;
+                        border: 2px double black;
+                        background-color: aquamarine;
+                    }
+
+                    textarea{
+                        width:100%;
+                        height: 35%;
+                        }
+
+                </style>
+    </head>
+            <body>
+            <script src="js/main.js"></script>
+            <center>
+                <div>
+                <form><h1>Examples</h1><br>
+                    <label for ="Aloe">Aloe:</label>
+                        <input type="checkbox"  onclick="aloe()"><br>
+                    <label for ="nan">0 / 0:</label>
+                        <input type="checkbox" onclick="nan()"><br>
+                    <label for ="isnan">This is a string..</label>
+                        <input type="checkbox" onclick="is_nan()"><br>
+                    <label for ="isnan2">333?:</label>
+                        <input type="checkbox" onclick="is_nan2()"><br>
+                    <label for ="infin">3E333 =:</label>
+                        <input type="checkbox" onclick="infinity()"><br>
+                    <label for ="infin">-3E333 =:</label>
+                         <input type="checkbox" onclick="neg_infinity()"><br>
+                    <label for ="bool">7 > 1:</label>
+                         <input type="checkbox" onclick="bool_1()"><br>
+                    <label for ="bool2">7 < 1:</label>
+                         <input type="checkbox" onclick="bool_2()"><br><br>
+
+                    PLEASE PRESS CTRL + SHIFT + I NOW FOR CONSOLE EXAMPLES
+
+                    <h3>more examples:</h3>
+                    <br>
+                    <button type="button" onclick="coer()">[ ]</button> 
+                    <button type="button" onclick="trip()">[ ]</button>
+                    <button type="button" onclick="trip_2()">[ ]</button>
+                    <button type="button" onclick="trip_3()">[ ]</button> 
+                    <button type="button" onclick="and()">[ ]</button>
+                    <button type="button"onclick="or()">[ ]</button>
+                    <button type="button" onclick="notfun()">[ ]</button>
+                    <br><br>
+                    <textarea id="disp_one"></textarea><br><br>
+                </form>
+                </div>
+            </center>
+    </body>
+</html>
