@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Examples</title>
+    <script src="js/main.js"></script>
+    <style>
+    body{
+    background-color: #999b84;
+    color:black;
+    font-size: large;
+    margin-top: 5%;
+    margin-left: 10%;
+    }
+
+    button{
+    padding: 3px;
+    margin: 3px;
+    background-color: #efd9d1;
+    border: 3px double black;
+    }
+
+
+
+    td{ 
+        padding-right: 60px;
+    }
+
+    </style>
+    </head>
+        <body>
+            <table>
+            <tr>
+                <td>
+                    <h3>Riders must be at least 52 centimeters tall to ride</h3><br>
+                    <input id="Height" value="52">
+                    <button onclick="Ride_Function()">Click here</button>
+                    <p id="Ride"></p>
+
+                </td>
+                 <td>
+                    <p>Owners [Vehicles]</p>
+                    <button onclick="myFunction()">Click Here</button>
+                    <p id="Keywords_and_Constructors"></p>
+                    <button onclick="Keywords()">Click here</button>
+                    <p id="New_and_This"></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <h3>You must be 21 to vote</h3><br>
+                    <input id="Age" type="input" value="00" placeholder="Enter your age here">
+                    <button onclick="Vote_Function()">Confirm</button>
+                    <p id="Vote"></p>
+
+                   
+                    </td>
+                    <td>
+                    <p>Sandwich Orders</p>
+                    <button onclick="myFunction_b()">View Orders</button>
+                    <p id="sandwich_order"></p>
+                    <p>Mystery Number</p>
+                     <button onclick="Nested_Function()">Count</button>
+                    <p id="Counting"></p>
+
+                </td>
+            </tr>
+            </table>
+
+            
+        </body> 
+
+</html>
