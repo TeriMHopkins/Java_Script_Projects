@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tattoo</title>
+        <script src="js/main.js"></script>
+        <style>
+            body{
+                background-color: #abb9b9;
+                color: #3a3e4a;
+                font-family: " courier new ","courier ","monospace ";
+                margin-right: 10%;
+            }
+
+            
+            h1{
+                text-align: center;
+                font-size: xx-large;
+                font-weight: 600;
+            }
+
+            h3{ 
+                font-size: larger;
+                font-weight: 100;
+            }
+
+            .container{
+                width:auto;
+                height:auto;
+                margin: 15%;
+            }
+
+            .column{
+                float: left;
+                width: 90%;
+                background-color: #e3e6ef;
+                padding-right: 10%;
+                padding-left: 10%;
+                align-content: center;
+                border:4px double black;
+                
+            }
+          
+           
+            .row.after{
+                content:" ";
+                display: table;
+                clear:both;
+            }
+
+            .banner{
+                border: 3px double black;
+                padding: 10px;
+                margin-top: 10px;
+                width: 90%;
+            }
+
+            .foot{
+                font-size: x-small;
+                font-style: italic;
+                opacity: 50%;
+            }
+
+            .msg{
+                display: inline-right;
+            }
+            
+            
+        </style>
+    </head>
+
+    <body onload="Time_foot()">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="banner">
+                        <p id="foot"></p>  
+                    <h1>Cats & Crystals Tattoo Parlour</h1>  
+                    </div>
+                    <br><br>
+                    <h3>You must be 18 or older to schedule an appointment</h3>
+                    <p>Enter the year you were born:</p>
+                    <input id="age_input" value="" placeholder="ex.1990">
+                    <button onclick="Tattoo()">ENTER</button>
+                    <p id ="res"></p>
+                    <p id ="App_time"></p>
+                    <p>Contact us:</p>
+                    <form><input id="msg" value="" type="email">
+                    <button type="button" onclick="contact()">[ ]</button></form>
+                    <p id="m"></p>
+                    <br><br>
+                    
+                    
+                </div>
+                
+                
+            </div>
+           
+
+
+        </div>
+        
+
+
+
+
+        
+
+
+
+
+    </body>
+</html>
