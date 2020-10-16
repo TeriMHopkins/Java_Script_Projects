@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Wizard of Oz</title>
+        <script src="js/main.js"></script>
+        <style>
+            .back{
+                background-image: url("images/background.png");
+                background-color: #cccccc;
+                height: 800px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            .back-text{
+                text-align: center;
+                font-size: large;
+                position: absolute;
+                background-color: rgba(0,0,0,0.7); 
+                top: 50%;
+                left: 50%;
+                padding: 25px;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+       </style>
+    </head>
+    <body>
+        <div class="back">
+            <div class="back-text">
+                <h1>Examples with a Wizard of Oz theme</h1>
+                <br><br>
+                    <form>
+                        <label for concat>Concat Method</label>
+                        <input name="concat" type="checkbox" onclick="full_Sentence()"><br>
+                        <p id= "concatenate"></p><br>
+                        <label for slice>Slice Method</label>
+                        <input name="slice" type="checkbox" onclick="slice_method()">
+                        <p>"Some people without brains do an awful lot of talking"</p>
+                        <p id = "Slice"></p><br>
+                        <label for case>to Uppercase Method</label>
+                        <input name="case" type="checkbox" onclick="Case_up()"><br>
+                        <p id="witch"></p><br>
+                        <label for string>to String Method</label>
+                        <input name="string" type="checkbox" onclick="string_Method()"><br>
+                        <p id="release"></p><br>
+                        <label for box>to Precision Method</label>
+                        <input name="box" type="checkbox" onclick="precision_Method()"><br>
+                        <p id="box_Office"></p><br>
+                        <label for fix>to Fixed Method</label>
+                        <input name="fix" type="checkbox" onclick="to_fixed()"><br>
+                        <p id="opening"></p><br>
+                        <label for Kansas>Valueof Method</label>
+                        <input name="Kansas" type="checkbox" onclick="val_Method()"><br>
+                        <p id="kansas"></p>
+
+                    </form>
+
+                <br><br>
+            </div>
+        </div>
+    </body>
+</html>
