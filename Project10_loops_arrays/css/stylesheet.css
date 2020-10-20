@@ -1,0 +1,23 @@
+
+.back{
+background-image: url("");
+background-color: #cccccc;
+height: 800px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.back-text{
+text-align: center;
+font-size: large;
+position: absolute;
+background-color: rgba(0,0,0,0.7); 
+top: 50%;
+left: 50%;
+padding: 25px;
+transform: translate(-50%, -50%);
+color: white;
+}
+
