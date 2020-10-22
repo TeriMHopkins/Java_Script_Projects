@@ -1,27 +1,27 @@
-let activePlayer='X';
+let activePlayer='X';  //sets player as X by default//
 
-let selectedSquares=[];
+let selectedSquares=[];  //starts an array to record moves//
 
 function placeXOrO(squareNumber) {
-    if (!selectedSquares.some(element =>element.includes(squareNumber))) {
+    if (!selectedSquares.some(element =>element.includes(squareNumber))) {  //this checks to see if the box is already occupied//
         let select = document.getElementById(squareNumber);
         if (activePlayer === 'X') {
-            select.style.backgroundImage = 'url("./images/x.png")';
+            select.style.backgroundImage = 'url("./images/x.png")';    //if the box is empty, the active player can have it//
         } else {
             select.style.backgroundImage = 'url("./images/o.png")';
         }
-        selectedSquares.push(squareNumber + activePlayer);
-        checkWinConditions();
+        selectedSquares.push(squareNumber + activePlayer);  //this ads the last move to the array//
+        checkWinConditions();                              //checks to see if there is a win//
         if (activePlayer === 'X') {
             activePlayer = 'O';
         }else {
-            activePlayer = 'X';
+            activePlayer = 'X';    //switches players//
         }
 
         audio('./media/place_1.mp3');
         if (activePlayer === 'O') {
             disableClick();
-            setTimeout(function (){computersTurn(); }, 1000);
+            setTimeout(function (){computersTurn(); }, 1000);  //disables player from clicking while it's the computer's turn//
         }
         return true;
     }
@@ -30,7 +30,7 @@ function placeXOrO(squareNumber) {
         let success = false;
         let pickASquare;
         while(!success){
-            pickASquare = String(Math.floor(Math.random() * 9));
+            pickASquare = String(Math.floor(Math.random() * 9));   //this allows the computer to take a turn with the use of random math & seeing if the box is occupied//
             if (placeXOrO(pickASquare)){
                 placeXOrO(pickASquare);
                 success = true;
@@ -41,7 +41,7 @@ function placeXOrO(squareNumber) {
 
 
 function checkWinConditions() {
-         if (arrayIncludes('0X','1X','2X')) { drawWinLine(50,100,558,100);}
+         if (arrayIncludes('0X','1X','2X')) { drawWinLine(50,100,558,100);}      //these are all the possible winning line arrays//
     else if (arrayIncludes('3X','4X','5X')) { drawWinLine(50,304,558,304);}
     else if (arrayIncludes('6X','7X','8X')) { drawWinLine(50,508,558,508);}
     else if (arrayIncludes('0X','3X','6X')) { drawWinLine(100,50,100,558);}
@@ -81,7 +81,7 @@ function audio (audioURL) {
 }
 
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
-    const canvas = document.getElementById('win-lines');
+    const canvas = document.getElementById('win-lines');   //uses the canvas in HTML to draw lines//
     const c = canvas.getContext ('2d');
 
     let x1 = coordX1,
@@ -92,7 +92,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         y =y1;
 
         function animateLineDrawing() {
-            const animationLoop = requestAnimationFrame(animateLineDrawing);
+            const animationLoop = requestAnimationFrame(animateLineDrawing);   //positions the lines//
             c.clearRect(0,0,608,608);
             c.beginPath();
             c.moveTo(x1,y1);
@@ -125,7 +125,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 
 function resetGame() {
     for (let i =0; i <9; i++) {
-        let square = document.getElementById(String(i));
+        let square = document.getElementById(String(i));  //resets the game//
         square.style.backgroundImage='';
     }
 }selectedSquares=[];
