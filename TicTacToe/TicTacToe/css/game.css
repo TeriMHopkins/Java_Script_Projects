@@ -1,0 +1,32 @@
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+body {
+    background-color: rgba(204, 198,181, 0.8);
+}
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td {
+    cursor: pointer;
+    border: 4px solid rgba(51,51,38,0.8);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: "New courier","courier","sans-serif";
+    font-weight: 600;
+}
