@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>basic layout</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>  <!--links to ajax library-->
     </head>
-
+                                        <!--when document is loaded and ready, html is applied via jQuery-->
     <script>
         $(document).ready(function(){
-$("html").append(
+$("html").append(                       
     "<body>\
          <div id='container'>\
              <div id='inner'>\
@@ -27,13 +27,9 @@ $("html").append(
         $('h1').hide();
     });
     $("#4").click(function() {
-       $('p').slideDown(600).hide();
+       $('p').fadeOut(1600);
     });
     
 });
-
-
-
-
-    </script>
+    </script>   <!-- p2, is changed to red, clicking on p3 hides h1, clicking on p4 causes all paragraphs to fade out-->
 </html>
